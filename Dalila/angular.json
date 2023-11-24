@@ -102,6 +102,70 @@
           }
         }
       }
+    },
+    "pages": {
+      "projectType": "library",
+      "root": "projects/pages",
+      "sourceRoot": "projects/pages/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/pages/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/pages/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/pages/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/pages/src/test.ts",
+            "tsConfig": "projects/pages/tsconfig.spec.json",
+            "karmaConfig": "projects/pages/karma.conf.js"
+          }
+        }
+      }
+    },
+    "page-elements": {
+      "projectType": "library",
+      "root": "projects/page-elements",
+      "sourceRoot": "projects/page-elements/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/page-elements/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/page-elements/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/page-elements/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/page-elements/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

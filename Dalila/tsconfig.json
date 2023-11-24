@@ -16,6 +16,14 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "page-elements": [
+        "dist/page-elements"
+      ],
+      "pages": [
+        "dist/pages"
+      ]
+    },
     "target": "es2020",
     "module": "es2020",
     "lib": [
