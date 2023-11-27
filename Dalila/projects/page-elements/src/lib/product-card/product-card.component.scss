@@ -2,6 +2,12 @@
     width: 20rem;
     height: 38rem;
     font-size: 25px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.product {
+    margin: 3em;
 }
 
 .product-image {

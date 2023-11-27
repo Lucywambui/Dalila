@@ -7,10 +7,8 @@
         <div class="header">
             <h1>Best sellers</h1>
         </div>
-        <div class="items" fxLayoutAlign="center center">
-            <lib-product-card [products]="products"></lib-product-card>
+        <div class="items" fxLayout="column" fxLayoutAlign="center">
+            <lib-product-card fxLayout="row" [products]="products | slice:0:5"></lib-product-card>
         </div>
 
     </div>
-
-</div>
