@@ -166,6 +166,39 @@
           }
         }
       }
+    },
+    "ng-material": {
+      "projectType": "library",
+      "root": "projects/ng-material",
+      "sourceRoot": "projects/ng-material/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ng-material/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-material/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-material/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ng-material/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

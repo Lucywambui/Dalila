@@ -1,0 +1,59 @@
+.navbar {
+    height: 10rem;
+    color: #1e1e1e;
+}
+
+.navbar .navbar-elements {
+    display: flex;
+    font-size: 40px;
+    align-items: flex-start;
+    position: relative;
+    top: 28px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.navbar .header {
+    position: relative;
+    font-size: 70px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.navbar .right-navbar {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 40px;
+    margin-top: 20px;
+    padding: 10px 0px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.navbar .home {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    letter-spacing: 0;
+    line-height: normal;
+    color: #000000 !important;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar .products {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    color: #000000 !important;
+    text-decoration: none;
+}
+
+.navbar .my-basket {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    text-decoration: underline;
+    color: #000000 !important;
+    text-decoration: none;
+}

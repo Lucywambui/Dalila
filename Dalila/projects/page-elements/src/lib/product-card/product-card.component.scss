@@ -1,0 +1,63 @@
+.product-box {
+    width: 20rem;
+    height: 38rem;
+    font-size: 25px;
+}
+
+.product-image {
+    width: 20rem;
+    height: 20rem;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+}
+
+.text-wrapper {
+    height: 3em;
+    font-size: 25px;
+    margin: 0.5em;
+    color: #404f45;
+    text-align: right;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-name {
+    width: 269px;
+    height: 66px;
+}
+
+.price {
+    gap: 0.7em;
+}
+
+.promo-price {
+    width: 57px;
+    height: 44px;
+    -webkit-text-stroke: 0.7px #404f45;
+    color: #404f45;
+    text-align: center;
+}
+
+.org-price {
+    width: 57px;
+    height: 44px;
+    color: #00000080;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.basket-button {
+    margin: 1em;
+}
+
+button {
+    width: 216px;
+    height: 68px;
+    background-color: #a2a77f;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #00000040;
+    font-family: "Kurale", serif;
+    font-size: 25px;
+}

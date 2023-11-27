@@ -17,6 +17,9 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
+      "ng-material": [
+        "dist/ng-material"
+      ],
       "page-elements": [
         "dist/page-elements"
       ],
@@ -24,7 +27,7 @@
         "dist/pages"
       ]
     },
-    "target": "es2020",
+    "target": "es2022",
     "module": "es2020",
     "lib": [
       "es2020",

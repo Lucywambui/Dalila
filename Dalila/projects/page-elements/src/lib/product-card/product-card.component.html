@@ -1,0 +1,20 @@
+<div class="product-box">
+    <div class="product" fxLayout="column" fxLayoutAlign="center center" *ngFor="let product of products">
+        <div class="product-image" fxLayout="column">
+            <img fxLayout="row" class="overlap-group" />
+            <div class="text-wrapper" fxLayout="row" fxLayoutAlign="end start">%25 OFF</div>
+        </div>
+
+        <div class="product-info" fxLayout="column" fxLayoutAlign="center center">
+
+            <p fxLayout="row" fxLayoutAlign="center center" class="product-name">{{product.productName}} - {{product.productVol}}</p>
+            <div fxLayout="row" fxLayoutAlign="space-around center" class="price">
+                <div fxLayout="row" fxLayoutAlign="center center" class="promo-price">{{product.productPromotionPrice}}</div>
+                <div fxLayout="row" fxLayoutAlign="center center" class="org-price">{{product.productOriginalPrice}}</div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center center" class="basket-button">
+                <button>Add to Basket</button>
+            </div>
+        </div>
+    </div>
+</div>
