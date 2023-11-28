@@ -13,24 +13,24 @@ button {
 }
 
 .product-box {
-    width: 18rem;
-    height: 18rem;
+    height: 20rem;
     font-size: 25px;
     width: 100%;
+    gap: 2.4em;
     flex-wrap: wrap;
     align-self: center;
 }
 
 .product {
-    margin-left: 4em;
+    margin-left: 3em;
     margin-top: 2em;
-    margin-right: 4em;
+    margin-right: 3em;
     width: 20%;
 }
 
 .product-image {
-    width: 18rem;
-    height: 18rem;
+    width: 22rem;
+    height: 22rem;
     background-color: #d9d9d9;
     border-radius: 20px;
 }
