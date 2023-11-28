@@ -8,6 +8,14 @@ import { BasketPageComponent } from './basket-page/basket-page.component';
 import { ReviewPageComponent } from './review-page/review-page.component';
 import { PageElementsModule } from 'projects/page-elements/src/public-api';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {
+  CdkMenu,
+  CdkMenuItem,
+  CdkMenuItemRadio,
+  CdkMenuGroup,
+  CdkMenuItemCheckbox,
+  CdkMenuTrigger,
+} from '@angular/cdk/menu';
 
 @NgModule({
   declarations: [
@@ -19,6 +27,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ReviewPageComponent
   ],
   imports: [
+    CdkMenuTrigger,
+    CdkMenu,
+    CdkMenuItemCheckbox,
+    CdkMenuGroup,
+    CdkMenuItemRadio,
+    CdkMenuItem,
     PageElementsModule,
     FlexLayoutModule,
     CommonModule

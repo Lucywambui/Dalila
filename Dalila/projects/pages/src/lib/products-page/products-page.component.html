@@ -1,1 +1,22 @@
-<p>products-page works!</p>
+<div class="main-container" fxLayout="column" fxLayoutAlign="center center">
+
+    <div class="products" fxLayout="column" fxLayoutAlign="start">
+        <div class="header" fxLayout="row" fxLayoutAlign="space-between center">
+
+            <h1 fxLayout="column" fxLayoutAlign="start">All products</h1>
+            <i fxLayout="column" fxLayoutAlign="end" class="fa fa-filter" aria-hidden="true" #menu scrollHeight="400px" scrollable="true">
+             <ng-template pTemplate="header"> 
+              <div>Volume in (ml) - Lowest to Highest</div>
+             <div>Volume in (ml) - Highest to Lowest</div>
+          </ng-template> 
+        
+         </i>
+
+        </div>
+
+        <div class="items " fxLayout="column " fxLayoutAlign="center ">
+            <lib-product-card fxLayout="row " [products]="products "></lib-product-card>
+        </div>
+
+    </div>
+</div>

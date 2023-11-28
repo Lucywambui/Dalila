@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product, products } from '../models/product.model';
 
 @Component({
   selector: 'lib-basket-page',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./basket-page.component.scss']
 })
 export class BasketPageComponent {
-
+  products: Product[] = products;
 }
