@@ -9,32 +9,8 @@
             <th fxLayout="column">Price</th>
         </div>
         <div class="line" fxLayout="row" fxLayoutAlign="center center"></div>
-        <div class="item" fxLayout="column" fxLayoutAlign="center center" *ngFor="let product of products| slice:0:5">
-
-            <div fxLayout="row" fxLayoutAlign="center center" class="item-desc">
-                <div fxLayout="column" class="product-image">
-                    <div class="image"></div>
-                    <div class="product-offer">%25 OFF</div>
-                </div>
-
-                <div fxLayout="column" class="product-info">
-                    <div fxLayout="row" class="product-name">{{product.productName}} - {{product.productVol}}</div>
-                    <div fxLayout="row" class="price-box">
-                        <div class="promo-price">{{product.productPromotionPrice}}</div>
-                        <div class="org-price">{{product.productOriginalPrice}}</div>
-                    </div>
-
-                    <div class="prod-box" fxLayout="column" fxLayoutAlign="end start">
-                        <div class="quantity">1</div>
-
-                        <i style="left: 14px; top: 15px; position: absolute" class="fa fa-plus" aria-hidden="true"></i>
-                        <i class="fa-solid fa-minus" style="left: 113px; top: 22px; position: absolute; font-size: xx-large"></i>
-
-
-                    </div>
-                </div>
-
-            </div>
+        <div class="item" fxLayout="column" fxLayoutAlign="center center">
+            <lib-basket-items [products]="products | slice:0:4"></lib-basket-items>
 
         </div>
         <div fxLayout="column" fxLayoutAlign="center none">

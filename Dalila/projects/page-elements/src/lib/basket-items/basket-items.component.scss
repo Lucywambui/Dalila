@@ -1,0 +1,103 @@
+.fa {
+    font-size: 40px;
+    margin-right: 3em;
+    font-weight: 200;
+}
+
+.image {
+    width: 18rem;
+    height: 18rem;
+    position: absolute;
+    background: #D9D9D9;
+    border-radius: 20px;
+}
+
+.item-desc {
+    width: 90%;
+    height: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 1em;
+}
+
+.line {
+    width: 90%;
+    align-self: center;
+    border: 2px rgba(64, 79, 69, 0.50) solid;
+}
+
+.org-price {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 25px;
+    text-decoration: line-through;
+    word-wrap: break-word;
+}
+
+.product-offer {
+    left: 149px;
+    top: 18px;
+    position: absolute;
+    text-align: center;
+    color: #404F45;
+    font-size: 24px;
+    word-wrap: break-word;
+}
+
+.product-image {
+    width: 18rem;
+    height: 18rem;
+    font-size: 20px;
+    position: relative;
+}
+
+.product-info {
+    width: 1066.74px;
+    height: 279px;
+    position: relative;
+    font-size: 25px;
+}
+
+.price-box {
+    width: 174px;
+    height: 59px;
+    left: 800px;
+    top: 0px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 26px;
+    display: inline-flex;
+}
+
+.prod-box {
+    width: 171px;
+    height: 70px;
+    left: 0px;
+    top: 209px;
+    position: absolute;
+    border-radius: 20px;
+    background: #A2A77F;
+    align-self: flex-end;
+}
+
+.promo-price {
+    color: #404F45;
+    word-wrap: break-word;
+}
+
+.quantity {
+    width: 64px;
+    height: 50px;
+    left: 54px;
+    top: 10px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 35px;
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}

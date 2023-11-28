@@ -4,6 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CommonModule } from '@angular/common';
+import { BasketItemsComponent } from './basket-items/basket-items.component';
 
 
 
@@ -11,7 +12,8 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     NavbarComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    BasketItemsComponent
   ],
   imports: [
     RouterModule,
@@ -21,7 +23,8 @@ import { CommonModule } from '@angular/common';
   ],
   exports: [
     NavbarComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    BasketItemsComponent
   
   ]
 })
